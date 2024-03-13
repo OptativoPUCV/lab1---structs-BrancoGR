@@ -18,7 +18,8 @@ int findMax(int arr[], int size) { return 0; }
         int numeroMax = arr[i];
       }
     }
-} return numeroMax;
+}
+return numeroMax;
 
 /*
 Ejercicio 2: Invertir un Arreglo

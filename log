@@ -300,3 +300,23 @@ exercises.c:51:17: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 2e23c28
+Wed 13 Mar 2024 08:53:30 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:7: error: array size missing in ‘arr2’
+   48 |   int arr2[];
+      |       ^~~~
+exercises.c:53:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   53 |       if (arr[i] % 2 == 0)
+      |       ^~
+exercises.c:55:10: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   55 |          j++;
+      |          ^
+exercises.c:57:10: error: function returns address of local variable [-Werror=return-local-addr]
+   57 |   return arr2;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d57aa3c

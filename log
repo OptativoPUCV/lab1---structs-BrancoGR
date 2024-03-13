@@ -32,3 +32,21 @@ exercises.c:13:1: error: expected identifier or ‘(’ before ‘{’ token
       | ^
 Compilation failed
 a44f88c
+Wed 13 Mar 2024 08:31:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:13: error: unused variable ‘numeroMax’ [-Werror=unused-variable]
+   18 |         int numeroMax = arr[i];
+      |             ^~~~~~~~~
+exercises.c:21:10: error: ‘numeroMax’ undeclared (first use in this function)
+   21 |   return numeroMax;
+      |          ^~~~~~~~~
+exercises.c:21:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:22:1: error: control reaches end of non-void function [-Werror=return-type]
+   22 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c29c56a

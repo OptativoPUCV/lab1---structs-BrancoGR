@@ -23,3 +23,12 @@ exercises.c:22:1: error: expected identifier or ‘(’ before ‘return’
       | ^~~~~~
 Compilation failed
 cc380b3
+Wed 13 Mar 2024 08:31:38 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:13:1: error: expected identifier or ‘(’ before ‘{’ token
+   13 | {
+      | ^
+Compilation failed
+a44f88c

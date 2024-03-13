@@ -388,3 +388,9 @@ exercises.c:72:7: error: variable ‘arr3’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 7eba92b
+Wed 13 Mar 2024 09:02:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+76d3484

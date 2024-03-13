@@ -13,9 +13,9 @@ int findMax(int arr[], int size)
 {
   int numeroMax = 0;
   
-  for (int i = 0, j = 0; i < size; i++)
+  for (int i = 0, j = 1; i < size; i++)
     {
-      if (arr[i] > arr[j + 1])
+      if (arr[i] > arr[j])
         numeroMax = arr[i];
       else
         j++;

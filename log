@@ -105,3 +105,15 @@ exercises.c:13:1: error: expected identifier or ‘(’ before ‘{’ token
       | ^
 Compilation failed
 b6b2e02
+Wed 13 Mar 2024 08:33:42 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c:13:1: error: expected identifier or ‘(’ before ‘{’ token
+   13 | {
+      | ^
+exercises.c:22:3: error: expected identifier or ‘(’ before ‘return’
+   22 | } return numeroMax;
+      |   ^~~~~~
+Compilation failed
+ae1234b

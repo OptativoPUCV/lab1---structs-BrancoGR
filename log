@@ -209,3 +209,14 @@ Wed 13 Mar 2024 08:40:06 PM UTC:
  tests:  0|7
 total_score: 0/70
 15053a1
+Wed 13 Mar 2024 08:41:54 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:24: error: ‘j’ undeclared (first use in this function)
+   18 |       if (arr[i] > arr[j])
+      |                        ^
+exercises.c:18:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+8f39ba3

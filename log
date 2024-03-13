@@ -356,3 +356,17 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 ec978fe
+Wed 13 Mar 2024 08:55:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   53 |       if (arr[i] % 2 == 0)
+      |       ^~
+exercises.c:55:10: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   55 |          j++;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+17e702a

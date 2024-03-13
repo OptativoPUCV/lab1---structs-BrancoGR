@@ -57,7 +57,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
       }
     }
   *newSize = j;
-  
   return arr2;
 }
 
@@ -67,9 +66,21 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+{
 
+  int arr3[];
+  for (int i = 0; i < size1; i++)
+    for (int j = 0; j < size2; j++)
+      {
+        if (arr1[i] < arr2[j])
+        {
+          arr3[i] = arr1[i];
+        }
+        else
+          arr3[i] = arr2[j];
+      }
+}
 /*
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,

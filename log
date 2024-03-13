@@ -81,3 +81,18 @@ exercises.c:21:10: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 a74a4c4
+Wed 13 Mar 2024 08:33:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:12:43: error: expected ‘;’ before ‘}’ token
+   12 | int findMax(int arr[], int size) {return 0};
+      |                                           ^
+      |                                           ;
+exercises.c: At top level:
+exercises.c:13:1: error: expected identifier or ‘(’ before ‘{’ token
+   13 | {
+      | ^
+Compilation failed
+43a0a4f

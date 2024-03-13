@@ -289,3 +289,14 @@ exercises.c:51:9: error: invalid type argument of unary ‘*’ (have ‘int’)
       |         ^~~~~~~~~~~
 Compilation failed
 29a44e6
+Wed 13 Mar 2024 08:50:40 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:51:17: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   51 |         newSize = arr[i];
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+2e23c28

@@ -52,9 +52,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     }
 }
 
-
-{ return NULL; }
-
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos

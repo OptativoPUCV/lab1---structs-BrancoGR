@@ -12,8 +12,9 @@ y su tamaño, y devuelva el valor más grande del arreglo.
 int findMax(int arr[], int size) 
 {
   int numeroMax = 0;
+  int j = 1;
   
-  for (int i = 0, j = 1; i < size; i++)
+  for (int i = 0; i < size; i++)
     {
       if (arr[i] > arr[j])
         numeroMax = arr[i];

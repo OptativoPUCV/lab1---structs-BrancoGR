@@ -66,3 +66,18 @@ exercises.c:22:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 e5a3f19
+Wed 13 Mar 2024 08:32:56 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:13: error: unused variable ‘numeroMax’ [-Werror=unused-variable]
+   18 |         int numeroMax = arr[i];
+      |             ^~~~~~~~~
+exercises.c:21:10: error: ‘numeroMax’ undeclared (first use in this function)
+   21 |   return numeroMax;
+      |          ^~~~~~~~~
+exercises.c:21:10: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+a74a4c4

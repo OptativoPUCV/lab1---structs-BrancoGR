@@ -320,3 +320,39 @@ exercises.c:57:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 d57aa3c
+Wed 13 Mar 2024 08:55:37 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:33: error: expected ‘)’ before ‘;’ token
+   48 |   int *arr2 = malloc(sizeof(int);
+      |                     ~           ^
+      |                                 )
+exercises.c:60:1: error: expected ‘,’ or ‘;’ before ‘}’ token
+   60 | }
+      | ^
+test.c:382:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+test.c:410:1: error: expected declaration or statement at end of input
+  410 | }
+      | ^
+test.c:7:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    7 | char msg[300];
+      |      ^~~
+In file included from test.c:1:
+exercises.c:48:8: error: unused variable ‘arr2’ [-Werror=unused-variable]
+   48 |   int *arr2 = malloc(sizeof(int);
+      |        ^~~~
+test.c:411: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:382:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-function]
+   47 | void readIntArray(int arr[], int *size) {
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ec978fe

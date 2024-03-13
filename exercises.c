@@ -68,22 +68,15 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
-
-  int *arr3 = malloc(sizeof(int));
+  /*int *arr3 = malloc(sizeof(int));
   int k = 0;
   int temp = 0;
   
   for (int i = 0; i < size1; i++)
     {
       temp = arr1[i];
-      
     }
-      
-    
-      
-      
-    
-}
+}*/
 /*
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,

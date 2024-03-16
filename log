@@ -624,3 +624,17 @@ exercises.c:71:21: error: variable ‘k’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 fa53465
+Sat 16 Mar 2024 01:59:14 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:73:16: error: invalid initializer
+   73 |   int arr3[] = malloc(sizeof(int));
+      |                ^~~~~~
+exercises.c:73:7: error: variable ‘arr3’ set but not used [-Werror=unused-but-set-variable]
+   73 |   int arr3[] = malloc(sizeof(int));
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+86c4bfb

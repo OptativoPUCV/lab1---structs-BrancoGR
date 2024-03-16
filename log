@@ -702,3 +702,9 @@ exercises.c:75:37: error: lvalue required as left operand of assignment
       |                                     ^
 Compilation failed
 c4ed2ec
+Sat 16 Mar 2024 02:43:32 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+e1d2c58

@@ -203,5 +203,14 @@ Nodo *crearListaEnlazada(int arr[], int size)
           actual = temp;
         }
       }
+
+      while (lista != NULL)
+      {
+          Nodo* siguiente = lista->siguiente;
+          free(lista);
+          lista = siguiente;
+      }
+
+  
       return lista;
 }

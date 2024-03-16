@@ -930,3 +930,17 @@ exercises.c:112:8: error: variable ‘asc’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 62c189c
+Sat 16 Mar 2024 03:08:18 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:7: error: variable ‘des’ set but not used [-Werror=unused-but-set-variable]
+  113 |   int des = 0;
+      |       ^~~
+exercises.c:112:7: error: variable ‘asc’ set but not used [-Werror=unused-but-set-variable]
+  112 |   int asc = 0;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+34d94fb

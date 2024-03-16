@@ -204,13 +204,14 @@ Nodo *crearListaEnlazada(int arr[], int size)
         }
       }
 
+/* (Si lo hago sin Liberar heap funciona :(   )
       temp = lista;
-
       while (lista != NULL)
       {
           Nodo* siguiente = lista->siguiente;
           free(lista);
           lista = siguiente;
       }
+*/
       return lista;
 }

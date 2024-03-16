@@ -692,3 +692,13 @@ Sat 16 Mar 2024 02:15:37 AM UTC:
  tests:  0|4
 total_score: 30/70
 ac81c30
+Sat 16 Mar 2024 02:43:23 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:37: error: lvalue required as left operand of assignment
+   75 |   while(i < size1 && j < size2 && k = size1 + size2)
+      |                                     ^
+Compilation failed
+c4ed2ec

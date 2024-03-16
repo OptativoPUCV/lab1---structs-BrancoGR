@@ -792,3 +792,17 @@ Sat 16 Mar 2024 02:51:52 AM UTC:
  1 file changed, 2 insertions(+), 4 deletions(-)
  tests:  0|0
 787c3cf
+Sat 16 Mar 2024 02:54:12 AM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:114:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  114 |       if (arr[i] < arr[i + 1])
+      |       ^~
+exercises.c:116:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  116 |         if (arr[i] < arr[i+1])
+      |         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2c826e5

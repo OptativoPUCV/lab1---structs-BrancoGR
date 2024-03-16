@@ -118,6 +118,7 @@ int checkSorted(int arr[], int size)
         if (temp < arr[i + 1])
           return 1;
       }
+    }
   return 0;
 }
 

@@ -880,3 +880,14 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 ff7a5eb
+Sat 16 Mar 2024 03:02:50 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:114:8: error: ‘i’ undeclared (first use in this function)
+  114 |   for (i = 0; i < size - 1; i++)
+      |        ^
+exercises.c:114:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+8d228bd

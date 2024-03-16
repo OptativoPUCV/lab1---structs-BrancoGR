@@ -896,3 +896,37 @@ Sat 16 Mar 2024 03:02:59 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 4639fe1
+Sat 16 Mar 2024 03:08:00 AM UTC: 
+ exercises.c | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:112:3: error: unknown type name ‘bool’
+  112 |   bool asc = false;
+      |   ^~~~
+exercises.c:6:1: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    5 | #include <string.h>
+  +++ |+#include <stdbool.h>
+    6 | 
+exercises.c:112:14: error: ‘false’ undeclared (first use in this function)
+  112 |   bool asc = false;
+      |              ^~~~~
+exercises.c:112:14: note: ‘false’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:112:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:113:3: error: unknown type name ‘bool’
+  113 |   bool des = false;
+      |   ^~~~
+exercises.c:113:3: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:118:15: error: ‘true’ undeclared (first use in this function)
+  118 |         asc = true;
+      |               ^~~~
+exercises.c:118:15: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:113:8: error: variable ‘des’ set but not used [-Werror=unused-but-set-variable]
+  113 |   bool des = false;
+      |        ^~~
+exercises.c:112:8: error: variable ‘asc’ set but not used [-Werror=unused-but-set-variable]
+  112 |   bool asc = false;
+      |        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+62c189c

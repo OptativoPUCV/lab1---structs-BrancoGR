@@ -1017,3 +1017,9 @@ exercises.c:177:38: error: unused variable ‘actual’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 2b7b19b
+Sat 16 Mar 2024 03:55:40 AM UTC: 
+ exercises.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+ tests:  0|0
+total_score: 70/70
+7accec6

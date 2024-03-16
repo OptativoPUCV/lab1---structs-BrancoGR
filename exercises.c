@@ -70,7 +70,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
 {
   int i = 0, j = 0, k = 0;
 
-  int arr3 = malloc(sizeof(int));
+  int *arr3 = malloc(sizeof(int));
   
   
   while(i < size1 && j < size2)

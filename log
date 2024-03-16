@@ -517,3 +517,8 @@ exercises.c:76:11: error: ‘arrr1’ undeclared (first use in this function); d
 exercises.c:76:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 ace09b8
+Sat 16 Mar 2024 01:49:48 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+1bf460e

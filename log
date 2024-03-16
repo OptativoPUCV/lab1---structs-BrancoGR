@@ -748,3 +748,14 @@ exercises.c:72:7: error: variable ‘result’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 c66aa21
+Sat 16 Mar 2024 02:45:13 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:72:11: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   72 |   *result = malloc(sizeof(int));
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+e0dbaae

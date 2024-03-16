@@ -1029,3 +1029,14 @@ Sat 16 Mar 2024 03:56:55 AM UTC:
  tests:  0|1
 total_score: 60/70
 f03fb89
+Sat 16 Mar 2024 03:57:55 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:207:15: error: ‘cabeza’ undeclared (first use in this function)
+  207 |       lista = cabeza;
+      |               ^~~~~~
+exercises.c:207:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3d14391

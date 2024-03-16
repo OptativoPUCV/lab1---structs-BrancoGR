@@ -891,3 +891,8 @@ exercises.c:114:8: error: ‘i’ undeclared (first use in this function)
 exercises.c:114:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8d228bd
+Sat 16 Mar 2024 03:02:59 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+4639fe1

@@ -118,6 +118,7 @@ int checkSorted(int arr[], int size)
       else
         return 0;
     }
+  return 0;
 }
 
 /*

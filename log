@@ -1006,3 +1006,14 @@ Sat 16 Mar 2024 03:40:46 AM UTC:
  tests:  0|1
 total_score: 60/70
 dd31ac9
+Sat 16 Mar 2024 03:53:20 AM UTC: 
+ exercises.c | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:177:38: error: unused variable ‘actual’ [-Werror=unused-variable]
+  177 |   Nodo *lista = NULL, *temp = NULL, *actual = NULL;
+      |                                      ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2b7b19b

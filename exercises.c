@@ -68,26 +68,24 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
-  int *arr3 = malloc(sizeof(int));
+  int i = 0, j = 0, k = 0;
+
   
-  int k = 0;
-  
-  for (int i = 0; i < size1; i++)
+  while(i < size1 && j < size2)
     {
-      while (arr1[i] < arr1[i + 1])
-        {
-          if(arr1[i] < arr2[i])
-          {
-            arr3[k] = arr1[i];
-            k++;
-          }
-          else {
-            arr3[k] = arr2[i];
-            k++;
-          }
-          break;
-        }
+      if (arrr1[i] < arr2[j])
+      {
+        result[k] = arr1[i];
+        i++;
+      }
+      else
+      {
+        result[k] = arr2[j];
+        j++;
+      }
+      k++;
     }
+  
 }
 /*
 Ejercicio 5: Comprobación de Ordenación

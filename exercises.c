@@ -120,9 +120,9 @@ int checkSorted(int arr[], int size)
         des = 1;
     }
 
-  if (asc)
+  if (asc && !des)
     return 1;
-  else if (des)
+  else if (des && !asc)
     return -1;
   else
     return 0;

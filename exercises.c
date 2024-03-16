@@ -204,7 +204,7 @@ Nodo *crearListaEnlazada(int arr[], int size)
         }
       }
 
-      lista = cabeza;
+      lista = actual;
 
       while (lista != NULL)
       {

@@ -573,3 +573,26 @@ Sat 16 Mar 2024 01:57:03 AM UTC:
  tests:  0|4
 total_score: 30/70
 a40971a
+Sat 16 Mar 2024 01:58:04 AM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:73:14: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   73 |   int arr3 = malloc(sizeof(int));
+      |              ^~~~~~
+exercises.c:80:13: error: subscripted value is neither array nor pointer nor vector
+   80 |         arr3[k] = arr1[i];
+      |             ^
+exercises.c:85:13: error: subscripted value is neither array nor pointer nor vector
+   85 |         arr3[k] = arr2[j];
+      |             ^
+exercises.c:73:7: error: variable ‘arr3’ set but not used [-Werror=unused-but-set-variable]
+   73 |   int arr3 = malloc(sizeof(int));
+      |       ^~~~
+exercises.c:71:21: error: variable ‘k’ set but not used [-Werror=unused-but-set-variable]
+   71 |   int i = 0, j = 0, k = 0;
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+32d5db7

@@ -972,3 +972,25 @@ exercises.c:155:33: error: expected statement before ‘)’ token
       |                                 ^
 Compilation failed
 d4decac
+Sat 16 Mar 2024 03:39:38 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:153:9: error: ‘libro’ redeclared as different kind of symbol
+  153 |   Libro libro = malloc(sizeof(Libro));
+      |         ^~~~~
+exercises.c:150:30: note: previous definition of ‘libro’ with type ‘Libro *’
+  150 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |                       ~~~~~~~^~~~~
+exercises.c:153:17: error: invalid initializer
+  153 |   Libro libro = malloc(sizeof(Libro));
+      |                 ^~~~~~
+exercises.c:155:15: error: invalid type argument of ‘->’ (have ‘Libro’)
+  155 |   strcpy(libro->titulo, titulo);)
+      |               ^~
+exercises.c:155:33: error: expected statement before ‘)’ token
+  155 |   strcpy(libro->titulo, titulo);)
+      |                                 ^
+Compilation failed
+429b6f2

@@ -719,3 +719,32 @@ Sat 16 Mar 2024 02:44:34 AM UTC:
  tests:  0|4
 total_score: 30/70
 9c7cf1c
+Sat 16 Mar 2024 02:45:06 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:72:7: error: ‘result’ redeclared as different kind of symbol
+   72 |   int result = malloc(sizeof(int));
+      |       ^~~~~~
+exercises.c:69:74: note: previous definition of ‘result’ with type ‘int *’
+   69 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+      |                                                                      ~~~~^~~~~~~~
+exercises.c:72:16: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   72 |   int result = malloc(sizeof(int));
+      |                ^~~~~~
+exercises.c:77:13: error: subscripted value is neither array nor pointer nor vector
+   77 |       result[x] = 0;
+      |             ^
+exercises.c:83:15: error: subscripted value is neither array nor pointer nor vector
+   83 |         result[k] = arr1[i];
+      |               ^
+exercises.c:88:15: error: subscripted value is neither array nor pointer nor vector
+   88 |         result[k] = arr2[j];
+      |               ^
+exercises.c:72:7: error: variable ‘result’ set but not used [-Werror=unused-but-set-variable]
+   72 |   int result = malloc(sizeof(int));
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c66aa21

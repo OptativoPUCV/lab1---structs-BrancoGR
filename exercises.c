@@ -1,4 +1,4 @@
-#include <ctype.h>
+no#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
